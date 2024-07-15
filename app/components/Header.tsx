@@ -14,16 +14,16 @@ type MenuLink = {
 }
 
 const menuLinks: MenuLink[] = [
-  {
-    title: 'Explore',
-    href: '/browse',
-  },
-  {
-    title: 'Shop',
-    href: 'https://shop.thegoodfornothings.club/collections/is-weed-legal-here',
-    target: '_blank',
-    noFollowExceptHome: true,
-  },
+  // {
+  //   title: 'Explore',
+  //   href: '/browse',
+  // },
+  // {
+  //   title: 'Shop',
+  //   href: 'https://shop.thegoodfornothings.club/collections/is-gambling-legal-here',
+  //   target: '_blank',
+  //   noFollowExceptHome: true,
+  // },
 ]
 
 const mobileMenuLinks: MenuLink[] = [
@@ -75,11 +75,11 @@ const Header = () => {
           href='/'
           className={`block text-[18px] font-bold leading-none transition-all duration-500 ease-out-expo ${
             !isHomePage
-              ? ' visible translate-y-0 opacity-100'
-              : ' invisible translate-y-6 opacity-0'
+              ? 'visible translate-y-0 opacity-100'
+              : 'invisible translate-y-6 opacity-0'
           }`}
         >
-          Is weed legal here?
+          Is gambling legal here?
         </Link>
         <div className='absolute bottom-[-8px] right-[-4px] top-[-8px] flex min-h-6 items-center gap-3 md:right-[-8px]'>
           <Link
@@ -90,7 +90,7 @@ const Header = () => {
             Buy us a coffee
           </Link>
           <Link
-            href='https://www.instagram.com/isweedlegalhere/'
+            href='https://www.instagram.com/thegfnc/'
             target='_blank'
             className='rounded-full p-2 transition-colors hover:bg-black/10 active:bg-black/20'
           >

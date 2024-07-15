@@ -6,14 +6,14 @@ import { IIHD_country, CurrentLocation } from './types'
 import { cmsFetch } from './data/client'
 
 const defaultPage: MetadataRoute.Sitemap[0] = {
-  url: 'https://www.isweedlegalhere.com',
+  url: 'https://www.isgamblinglegalhere.com',
   lastModified: new Date(),
   changeFrequency: 'weekly',
   priority: 1,
 }
 
 const browsePage: MetadataRoute.Sitemap[0] = {
-  url: 'https://www.isweedlegalhere.com/browse',
+  url: 'https://www.isgamblinglegalhere.com/browse',
   lastModified: new Date(),
   changeFrequency: 'weekly',
   priority: 1,
@@ -69,7 +69,7 @@ const enumerateLocationPages = (
         ...defaultPage,
         url: getUrlFromCurrentLocation(
           childLocation,
-          'https://www.isweedlegalhere.com/browse'
+          'https://www.isgamblinglegalhere.com/browse'
         ),
         priority: 0.9,
       })
@@ -82,20 +82,21 @@ const enumerateLocationPages = (
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const data = await cmsFetch<IIHD_country[]>({
-    query: ALL_DATA_QUERY,
-    tags: [
-      'IIHD_country',
-      'IIHD_administrativeAreaLevel1',
-      'IIHD_administrativeAreaLevel2',
-      'IIHD_locality',
-    ],
-  })
+  // const data = await cmsFetch<IIHD_country[]>({
+  //   query: ALL_DATA_QUERY,
+  //   tags: [
+  //     'IIHD_country',
+  //     'IIHD_administrativeAreaLevel1',
+  //     'IIHD_administrativeAreaLevel2',
+  //     'IIHD_locality',
+  //   ],
+  // })
 
-  const emptyCurrentLocation = getCurrentLocationFromUrlParams([])
-  const locationPages: MetadataRoute.Sitemap = []
+  // const emptyCurrentLocation = getCurrentLocationFromUrlParams([])
+  // const locationPages: MetadataRoute.Sitemap = []
 
-  await enumerateLocationPages(data, emptyCurrentLocation, locationPages)
+  // await enumerateLocationPages(data, emptyCurrentLocation, locationPages)
 
-  return [defaultPage, browsePage, ...locationPages]
+  // return [defaultPage, browsePage, ...locationPages]
+  return [defaultPage]
 }

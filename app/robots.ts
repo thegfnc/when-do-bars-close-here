@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: ['/'],
       disallow: ['/admin/'],
     },
-    sitemap: 'https://www.isweedlegalhere.com/sitemap.xml',
+    sitemap: 'https://www.isgamblinglegalhere.com/sitemap.xml',
   }
 }

@@ -28,11 +28,12 @@ export default function Home() {
     <main
       className={'flex flex-col gap-9 px-2 py-24 text-center ' + fadeInStyles}
     >
-      <Heading text={'Is weed legal here?'} />
+      <Heading text={'Is gambling legal here?'} />
       <div className='flex flex-col gap-6'>
-        <Suspense fallback={<SearchInputsFallback />}>
+        Coming Soon
+        {/* <Suspense fallback={<SearchInputsFallback />}>
           <SearchInputs />
-        </Suspense>
+        </Suspense> */}
       </div>
     </main>
   )

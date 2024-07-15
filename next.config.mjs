@@ -18,7 +18,7 @@ export default withSentryConfig(
     // Suppresses source map uploading logs during build
     silent: true,
     org: 'the-good-for-nothings-club',
-    project: 'is-weed-legal-here',
+    project: 'is-gambling-legal-here',
   },
   {
     // For all available options, see:
