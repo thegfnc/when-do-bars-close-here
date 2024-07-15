@@ -6,14 +6,14 @@ import { IIHD_country, CurrentLocation } from './types'
 import { cmsFetch } from './data/client'
 
 const defaultPage: MetadataRoute.Sitemap[0] = {
-  url: 'https://www.isgamblinglegalhere.com',
+  url: 'https://www.whendobarsclosehere.com',
   lastModified: new Date(),
   changeFrequency: 'weekly',
   priority: 1,
 }
 
 const browsePage: MetadataRoute.Sitemap[0] = {
-  url: 'https://www.isgamblinglegalhere.com/browse',
+  url: 'https://www.whendobarsclosehere.com/browse',
   lastModified: new Date(),
   changeFrequency: 'weekly',
   priority: 1,
@@ -69,7 +69,7 @@ const enumerateLocationPages = (
         ...defaultPage,
         url: getUrlFromCurrentLocation(
           childLocation,
-          'https://www.isgamblinglegalhere.com/browse'
+          'https://www.whendobarsclosehere.com/browse'
         ),
         priority: 0.9,
       })

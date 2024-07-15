@@ -28,7 +28,7 @@ export default function Home() {
     <main
       className={'flex flex-col gap-9 px-2 py-24 text-center ' + fadeInStyles}
     >
-      <Heading text={'Is gambling legal here?'} />
+      <Heading text={'When do bars close here?'} />
       <div className='flex flex-col gap-6'>
         Coming Soon
         {/* <Suspense fallback={<SearchInputsFallback />}>

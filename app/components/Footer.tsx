@@ -40,7 +40,7 @@ const Footer = () => {
         <div className='flex justify-center gap-2'>
           <span className='hidden md:block'>·</span>
           <a
-            href='https://github.com/thegfnc/is-gambling-legal-here'
+            href='https://github.com/thegfnc/when-do-bars-close-here'
             target='_blank'
             className='underline-offset-2 hover:underline'
           >

@@ -21,29 +21,28 @@ export async function generateMetadata(): Promise<Metadata> {
   const pathname = '/'
 
   return {
-    title: 'Navigate gambling laws confidently | Is gambling legal here?',
+    title: 'Navigate alcohol laws confidently | When do bars close here?',
     description:
-      'Learn about gambling laws in locations worldwide. Stay up-to-date on the latest regulations and find resources for safe and legal gambling.',
+      'Learn about alcohol laws in locations worldwide. Stay up-to-date on the latest regulations and find resources for safe and legal drinking.',
     referrer: 'origin-when-cross-origin',
     keywords: [
-      'Gambling laws',
-      'Legal gambling',
-      'Online betting regulations',
-      'Casino legality',
-      'Sports betting laws',
-      'Gambling legislation',
-      'State gambling rules',
-      'Poker legality',
-      'Lottery regulations',
-      'Gambling age restrictions',
-      'Offshore gambling laws',
-      'Gambling jurisdiction',
-      'Gambling licensing',
-      'Legal gambling sites',
-      'Gambling compliance',
+      'Bar closing times',
+      'Local bar hours',
+      'Nightlife curfew',
+      'Last call times',
+      'Alcohol service hours',
+      'Late-night bars',
+      'Drinking establishment hours',
+      'Pub closing times',
+      'City bar regulations',
+      'Nightclub hours',
+      'Liquor laws',
+      'After-hours bars',
+      'Weekend bar hours',
+      'Drinking curfew',
     ],
     creator: 'The Good for Nothings Club',
-    metadataBase: new URL('https://www.isgamblinglegalhere.com'),
+    metadataBase: new URL('https://www.whendobarsclosehere.com'),
     alternates: {
       canonical: pathname,
     },
@@ -65,14 +64,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Footer />
         </PageWrapper>
         <Analytics />
-        <Script src='https://www.googletagmanager.com/gtag/js?id=G-BV4G45K1PL' />
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-HNRV9PDXRN' />
         <Script id='google-analytics'>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-BV4G45K1PL');
+            gtag('config', 'G-HNRV9PDXRN');
           `}
         </Script>
       </body>

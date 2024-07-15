@@ -20,7 +20,7 @@ const menuLinks: MenuLink[] = [
   // },
   // {
   //   title: 'Shop',
-  //   href: 'https://shop.thegoodfornothings.club/collections/is-gambling-legal-here',
+  //   href: 'https://shop.thegoodfornothings.club/collections/when-do-bars-close-here',
   //   target: '_blank',
   //   noFollowExceptHome: true,
   // },
@@ -79,7 +79,7 @@ const Header = () => {
               : 'invisible translate-y-6 opacity-0'
           }`}
         >
-          Is gambling legal here?
+          When do bars close here?
         </Link>
         <div className='absolute bottom-[-8px] right-[-4px] top-[-8px] flex min-h-6 items-center gap-3 md:right-[-8px]'>
           <Link

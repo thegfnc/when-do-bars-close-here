@@ -68,7 +68,7 @@ export async function generateMetadata(
 
   const metadata: Metadata = {
     title:
-      'Browse gambling legality data around the world | Is gambling legal here?',
+      'Browse alcohol legality data around the world | When do bars close here?',
     alternates: {
       canonical: pathname,
     },

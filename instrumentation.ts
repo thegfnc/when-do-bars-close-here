@@ -5,7 +5,7 @@ export function register() {
     Sentry.init({
       enabled: process.env.VERCEL_ENV !== 'development',
 
-      dsn: 'https://357d04cfc34b75e886fda014a1dd7579@o4506369040187392.ingest.us.sentry.io/4507607786520576',
+      dsn: 'https://11f5167a6aaaebf5cc2a2df83cac04af@o4506369040187392.ingest.us.sentry.io/4507607910842368',
 
       // Adjust this value in production, or use tracesSampler for greater control
       tracesSampleRate: 1,
@@ -21,7 +21,7 @@ export function register() {
     Sentry.init({
       enabled: process.env.VERCEL_ENV !== 'development',
 
-      dsn: 'https://357d04cfc34b75e886fda014a1dd7579@o4506369040187392.ingest.us.sentry.io/4507607786520576',
+      dsn: 'https://11f5167a6aaaebf5cc2a2df83cac04af@o4506369040187392.ingest.us.sentry.io/4507607910842368',
 
       // Adjust this value in production, or use tracesSampler for greater control
       tracesSampleRate: 1,
